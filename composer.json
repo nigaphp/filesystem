@@ -1,0 +1,19 @@
+{
+    "name": "nigatedev/filesystem",
+    "description": "The Nigatedev php framework filesystem manipulator",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nigatedev\\Filesystem\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Abass Ben Cheik",
+            "email": "cheikabassben@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
