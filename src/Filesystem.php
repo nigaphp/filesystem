@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the Nigatedev PHP framework package 
+ * This file is part of the Nigatedev PHP framework package
  *
  * (c) Abass Ben Cheik <abass@todaysdev.com>
  */
@@ -15,33 +15,32 @@ use Nigatedev\Filesystem\Exceptions\DirNotFoundException;
  *
  * @author Abass Ben Cheik <abass@todaysdev.com>
  */
-class Filesystem {
+class Filesystem
+{
   
   /**
    * @var string $fieName
    */
-  private string $fieName;
+    private string $fieName;
   
-  public function isFile($fieName): bool
-  {
-    if (!file_exists($fieName)) {
-      throw new FileNotFoundException("Fatal error: {$fieName} file not found");
+    public function isFile(string $fieName): bool
+    {
+        if (!file_exists($fieName)) {
+            throw new FileNotFoundException("Fatal error: {$fieName} file not found");
+        }
+        return true;
     }
-    return true;
-  }
   
-  public function isFilePut($fieName)
-  {
-    if ($this->isFile($fieName)) {
-    return file_put_contents($fieName);
+  /**
+   * @param string $dirName
+   *
+   * @return bool
+   */
+    public function isDir($dirName)
+    {
+        if (!is_dir($dirName)) {
+            throw new DirNotFoundException("Fatal error: {$dirName} directory not found");
+        }
+        return true;
     }
-  }
-  
-  public function isDir($dirName)
-  {
-    if (!is_dir($dirName)) {
-      throw new DirNotFoundException("Fatal error: {$dirName} directory not found");
-    }
-    return true;
-  }
 }
