@@ -5,7 +5,7 @@
  * (c) Abass Ben Cheik <abass@todaysdev.com>
  */
 
-namespace Nigatedev\Filesystem;
+namespace Nigatedev\Framework\Filesystem;
 
 use Nigatedev\Filesystem\Exceptions\FileNotFoundException;
 use Nigatedev\Filesystem\Exceptions\DirNotFoundException;
