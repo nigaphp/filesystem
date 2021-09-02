@@ -18,6 +18,23 @@ use Nigatedev\Filesystem\Exceptions\DirNotFoundException;
 class Filesystem
 {
   
+   /**
+    * Default app root
+    *
+    * @var string $ROOT
+    */
+    public static $ROOT;
+    
+    /**
+     * Constructor
+     *
+     * @param string $root
+     */
+    public function __construct($root)
+    {
+        self::$ROOT = $root;
+    }
+    
   /**
    * @var string $fieName
    */
