@@ -1,13 +1,12 @@
 <?php
 /*
- * This file is part of the Nigatedev PHP framework package
+ * This file is part of the Niga PHP framework package
  *
- * (c) Abass Ben Cheik <abass@todaysdev.com>
+ * (c) Abass Dev <abass@abassdev.com>
  */
- 
- namespace Nigatedev\Filesystem\Exceptions;
- 
+
+namespace Niga\Filesystem\Exceptions;
+
 class DirNotFoundException extends \Exception implements FileExceptionInterface
 {
-   
 }

@@ -1,30 +1,30 @@
 <?php
 /*
- * This file is part of the Nigatedev PHP framework package
+ * This file is part of the Niga PHP framework package
  *
- * (c) Abass Ben Cheik <abass@todaysdev.com>
+ * (c) Abass Dev <abass@abassdev.com>
  */
 
-namespace Nigatedev\Framework\Filesystem;
+namespace Niga\Framework\Filesystem;
 
-use Nigatedev\Filesystem\Exceptions\FileNotFoundException;
-use Nigatedev\Filesystem\Exceptions\DirNotFoundException;
+use Niga\Filesystem\Exceptions\FileNotFoundException;
+use Niga\Filesystem\Exceptions\DirNotFoundException;
 
 /**
- * The Nigatedev PHP framework filesystem manipulator
+ * Filesystem
  *
- * @author Abass Ben Cheik <abass@todaysdev.com>
+ * @author Abass Dev <abass@abassdev.com>
  */
 class Filesystem
 {
-  
-   /**
-    * Default app root
-    *
-    * @var string $ROOT
-    */
+
+    /**
+     * Default app root
+     *
+     * @var string $ROOT
+     */
     public static $ROOT;
-    
+
     /**
      * Constructor
      *
@@ -34,12 +34,12 @@ class Filesystem
     {
         self::$ROOT = $root;
     }
-    
-  /**
-   * @var string $fieName
-   */
+
+    /**
+     * @var string $fieName
+     */
     private string $fieName;
-  
+
     public function isFile(string $fieName): bool
     {
         if (!file_exists($fieName)) {
@@ -47,12 +47,12 @@ class Filesystem
         }
         return true;
     }
-  
-  /**
-   * @param string $dirName
-   *
-   * @return bool
-   */
+
+    /**
+     * @param string $dirName
+     *
+     * @return bool
+     */
     public function isDir($dirName)
     {
         if (!is_dir($dirName)) {

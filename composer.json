@@ -1,19 +1,21 @@
 {
-    "name": "nigatedev/filesystem",
-    "description": "The Nigatedev php framework filesystem manipulator",
-    "type": "library",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Nigatedev\\Framework\\Filesystem\\": ""
-        }
-    },
-    "authors": [
-        {
-            "name": "Abass Ben Cheik",
-            "email": "cheikabassben@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {}
+  "name": "niga/filesystem",
+  "description": "Niga framework filesystem",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Niga\\Framework\\Filesystem\\": ""
+    }
+  },
+  "authors": [
+    {
+      "name": "Abass Dev",
+      "email": "abass@abassdev.com",
+      "role": "Lead developer",
+      "homepage": "https://abassdev.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {}
 }
